@@ -12,7 +12,8 @@ You need to have Python 3.6 installed to run this program.
 Create a virtual enironment and activate it.
 
 `$ python3.6 -m venv virtual`<br />
-`$ source virtual/bin/acivate` 
+`$ source virtual/bin/acivate`<br />
+
 In the virtual environment:
 
 `(virtual)$ pip install -r requirements.txt`<br />
