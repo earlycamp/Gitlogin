@@ -11,7 +11,7 @@ You need to have Python 3.6 installed to run this program.
 
 Create a virtual enironment and activate it.
 
-`$ sudo apt-get install python3.6 -m venv virtual`<br />
+`$ python3.6 -m venv virtual`<br />
 `$ source virtual/bin/acivate` 
 In the virtual environment:
 
