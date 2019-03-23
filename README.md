@@ -4,6 +4,15 @@ Basic python knowledge
 
 ----------------
 
+### Tech :computer:
+
+pagegit made use of:
+
+* Python3.6
+* Django 2.1.7
+* Postgresql : database
+
+
 #### Installation/Setup
 You need to have Python 3.6 installed to run this program.
 
