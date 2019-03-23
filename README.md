@@ -16,7 +16,7 @@ Create a virtual enironment and activate it.
 
 In the virtual environment:
 
-`(virtual)$ pip install -r requirements.txt`<br />
+`(virtual)$ pip install -r requirements.txt` <br/>
 
 run the following to view the website.
  $`./manage.py runserver`
@@ -24,4 +24,4 @@ run the following to view the website.
 
 #### Alternatively
 * Open browser (Google Chrome Recommended)
-* Visit the live [website](https)
+* Visit the live [website](https://pagegit.herokuapp.com/)
