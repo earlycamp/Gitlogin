@@ -1,10 +1,32 @@
 {% extends 'base.html' %}
 
-{% load socialaccount %}
+{%block content%}
 
-<!-- <h1>login with github test!!</h1>
-{% if user.is_authenticated %}
-<p>Welcome {{ user.username }} !!!</p>
-{% else %}
-<a href="{% provider_login_url 'github' %}">Sign Up</a>
-{% endif %} -->
+
+	<center>
+	<nav>
+		<img src="https://avatars0.githubusercontent.com/u/29069335?s=200&v=4">
+	</nav>
+	</center>
+
+<center>
+
+                 	{%if user.is_authenticated%}
+                 	<a href="logout/"><button>logout</button></a>
+                 	<p style="font-size: 30px;">welcome <em>{{user}}</em></p>
+
+
+                 	{%else%}
+                 	<p style="font-size: 30px;">Click to login via github</p>
+                 	<a href="login/"><button>login</button></a>
+
+                 	{%endif%}
+
+</center>
+
+
+                 	 
+
+
+{%endblock%}
+

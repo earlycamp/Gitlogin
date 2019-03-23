@@ -4,3 +4,11 @@ from django.shortcuts import render
 
 def land(request):
     return render(request, 'land.html')
+
+
+def login(request):
+    return render(request, 'login.html')
+
+def logout(request):
+    return render(request, 'logout.html')
+
