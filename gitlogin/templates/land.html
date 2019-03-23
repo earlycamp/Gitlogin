@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% load socialaccount %}
+
+<h1>login with github test!!</h1>
+{% if user.is_authenticated %}
+<p>Welcome {{ user.username }} !!!</p>
+{% else %}
+<a href="{% provider_login_url 'github' %}">Sign Up</a>
+{% endif %}
