@@ -30,6 +30,20 @@ In the virtual environment:
 run the following to view the website.
  $`./manage.py runserver`
 
+------------------
+
+#### Contributions
+
+##### Editing Templates
+
+    ├── ...
+    ├── templates                  
+    │   ├── base.html              # parent template
+    │   ├── land.html              # landing page
+    │   ├── login.html             # login/signin page
+    │   ├── logout.html            # logout/signout page
+    │   └── ...                    # etc.
+    └── ...
 
 #### Alternatively
 * Open browser (Google Chrome Recommended)
