@@ -22,8 +22,8 @@ from django.conf.urls import url, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.land, name='land'),
-    path('login/', views.login, name='login'),
+    path('land', views.land, name='land'),
+    path('', views.login, name='login'),
     path('logout/', views.logout, name='logout'),
     path('accounts/', include('allauth.urls')),
 ]
