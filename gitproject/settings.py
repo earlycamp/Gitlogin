@@ -178,3 +178,6 @@ SOCIAL_AUTH_GITHUB_SECRET = config('SOCIAL_AUTH_GITHUB_SECRET')
 
 # Configure Django App for Heroku.
 django_heroku.settings(locals())
+
+
+# permission module
