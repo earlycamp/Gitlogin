@@ -20,11 +20,14 @@
                 <h4>Your Have access to early camp.</h4>
                 <h1>{{user}}</h1>
 
-                <a href="logout/">
+                <a href="{%url 'logout'%}">
+
                         <button>logout</button>
+                        
                 </a>
 
                 {%else%}
+
 
                 <h1>Account Not Authorised</h1>
 
