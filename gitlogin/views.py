@@ -1,16 +1,47 @@
 from django.shortcuts import render
-
-# Create your views here.
-
-# def home(request):
-# 	return render(request, 'home.html')
+from django.contrib.auth.decorators import login_required
 
 
+
+@login_required
 def land(request):
-    return render(request, 'land.html')
+
+	c = "Blackadams" , "gitkata" , "Frank Tamre" , "Victor M" , "Peter Muturi" , "Kipsmthn"
+	d = str(request.user)
+
+	return render(request, 'land.html', locals())
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 def students(request):
     return render(request, 'students.html')
+
+def student(request):
+    return render(request, 'student.html')
 
 def staff(request):
     return render(request, 'staff.html')

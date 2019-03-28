@@ -24,25 +24,30 @@ urlpatterns = [
 
 
 
-    path('students/', include(([
-        path('login', views.students, name='students'),
-    ], 'classroom'), namespace='students')),
+    # path('students/', include(([
+    #     # path('', views.student, name='student'),
+    #     path('login', views.students, name='students'),
+    #     path('land', views.land, name='land'),
+    # ], 'classroom'), namespace='students')),
     
 
-    path('staff/', include(([
-        path('login', views.staff, name='staff'),
-    ], 'classroom'), namespace='staff')),
+    # path('staff/', include(([
+    #     path('login', views.staff, name='staff'),
+    # ], 'classroom'), namespace='staff')),
 
 
-     path('admins/', include(([
-        path('login', views.staff, name='staff'),
-    ], 'classroom'), namespace='admins')),
+    #  path('admins/', include(([
+    #     path('login', views.staff, name='staff'),
+    # ], 'classroom'), namespace='admins')),
 
 
     
-    path('land', views.land, name='land'),
+    path('land/', views.land, name='land'),
     path('', views.login, name='login'),
     path('logout/', views.logout, name='logout'),
     path('accounts/', include('allauth.urls')),
     path('admin/', admin.site.urls),
+
+
+
 ]

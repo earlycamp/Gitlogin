@@ -1,0 +1,27 @@
+                    List of relations
+ Schema |             Name              | Type  |  Owner  
+--------+-------------------------------+-------+---------
+ public | account_emailaddress          | table | moringa
+ public | account_emailconfirmation     | table | moringa
+ public | auth_group                    | table | moringa
+ public | auth_group_permissions        | table | moringa
+ public | auth_permission               | table | moringa
+ public | auth_user                     | table | moringa
+ public | auth_user_groups              | table | moringa
+ public | auth_user_user_permissions    | table | moringa
+ public | django_admin_log              | table | moringa
+ public | django_content_type           | table | moringa
+ public | django_migrations             | table | moringa
+ public | django_session                | table | moringa
+ public | django_site                   | table | moringa
+ public | social_auth_association       | table | moringa
+ public | social_auth_code              | table | moringa
+ public | social_auth_nonce             | table | moringa
+ public | social_auth_partial           | table | moringa
+ public | social_auth_usersocialauth    | table | moringa
+ public | socialaccount_socialaccount   | table | moringa
+ public | socialaccount_socialapp       | table | moringa
+ public | socialaccount_socialapp_sites | table | moringa
+ public | socialaccount_socialtoken     | table | moringa
+(22 rows)
+

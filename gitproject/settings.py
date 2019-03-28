@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.github',
+
   
 ]
 
@@ -181,3 +182,7 @@ django_heroku.settings(locals())
 
 
 # permission module
+
+ROLEPERMISSIONS_MODULE = 'gitproject.roles'
+
+# SOCIAL_AUTH_USER_MODEL = 'foo.bar.User'

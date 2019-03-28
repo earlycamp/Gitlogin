@@ -1,5 +1,4 @@
 {% extends 'base.html' %}
-
 {%block content%}
 
 
@@ -9,19 +8,35 @@
 	</nav>
 	</center>
 
-<center>
+<center>  
+          
 
-                 	{%if user.is_authenticated%}
-                 	<a href="logout/"><button>logout</button></a>
-                 	<p style="font-size: 30px;">welcome <em>{{user}}</em><br></p>
+        {%for i in c %}
+
+        {% if i == d %}
+
+                {% if user.is_authenticated %}
+                                 
+                <h4>Your Have access to early camp.</h4>
+                <h1>{{user}}</h1>
+
+                <a href="logout/">
+                        <button>logout</button>
+                </a>
+
+                {%else%}
+
+                <h1>Account Not Authorised</h1>
 
 
-                 	{%else%}
-                 	<p style="font-size: 30px;">Click to login via github</p>
-                 	<a href="login/"><button>login</button></a>
+                {%endif%}
 
-                 	{%endif%}
 
+         {% endif%}
+         {%endfor%}
+
+                   
+                    
 </center>
 
 
