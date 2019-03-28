@@ -11,44 +11,8 @@ def land(request):
 
 	return render(request, 'land.html', locals())
 
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-def students(request):
-    return render(request, 'students.html')
-
-def student(request):
-    return render(request, 'student.html')
-
-def staff(request):
-    return render(request, 'staff.html')
-
-def admins(request):
-    return render(request, 'admins.html')
-
+def sorry(request):
+    return render(request, 'sorry.html')
 
 def login(request):
     return render(request, 'login.html')

@@ -43,6 +43,7 @@ urlpatterns = [
 
     
     path('land/', views.land, name='land'),
+    path('sorry/', views.sorry, name='sorry'),
     path('', views.login, name='login'),
     path('logout/', views.logout, name='logout'),
     path('accounts/', include('allauth.urls')),
