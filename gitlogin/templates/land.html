@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {%block content%}
 
+        {% if user.is_authenticated %}
 
 	<center>
 	<nav>
@@ -10,12 +11,9 @@
 
 <center>  
           
+        {%if d in c %}
 
-        {%for i in c %}
-
-        {% if i == d %}
-
-                {% if user.is_authenticated %}
+              
                                  
                 <h4>Your Have access to early camp.</h4>
                 <h1>{{user}}</h1>
@@ -25,11 +23,20 @@
                         <button>logout</button>
 
                 </a>
-                {%endif%}
+
+                {% else %}
+                <p> You are not authorizzed to see this page, please go to this link below</p>
 
 
+
+                <a href="{%url 'logout'%}">
+
+                        <button>logout</button>
+
+                </a>
          {% endif%}
-         {%endfor%}
+
+
 
                    
                     
@@ -38,6 +45,12 @@
 
                  	 
 
+<center>
+         {% else %}
+
+         <p>  You are not authorized to see this page.</p>
+         {% endif %}
+</center>
 
 {%endblock%}
 

@@ -7,10 +7,14 @@ api_token = config('api_token')
 api_url_base = config('api_url_base')
 
 # will request earlycamp users
-response = requests.get( api_url_base + api_token ).json()
+response = requests.get( api_url_base + api_token).json()
 
 # will make sure only members are redirected
+only = str(request.user)
+
 for i in response:
+	if i == only:
+
 	print(i)
 
 

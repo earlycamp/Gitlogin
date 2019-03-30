@@ -7,7 +7,7 @@
 	</nav>
 	</center>
 
-
+{% if user.is_authenticated %}
 <center>
 {% load i18n %}
 <h1>{% trans "Sign Out" %}</h1>
@@ -22,5 +22,6 @@
   <button type="submit">{% trans 'Sign Out' %}</button>
 </form>
 </center>
+{%endif%}
 
 {%endblock%}
