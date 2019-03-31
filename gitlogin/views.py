@@ -7,13 +7,13 @@ from django.contrib.auth.decorators import login_required
 def land(request):
 
  	# from github api
-	z=[k['login'] for k in __import__('requests').get("https://api.github.com/orgs/earlycamp/members").json()]
-	print(z)
-
-
+	z=[k['login'] for k in __import__('requests').get(config('api_url_base')).json()]	
 	c = config('List')
 	d = str(request.user)
-	print(request.user)
+	if d in c and z:
+		r = d
+		# print(r)
+	# print(request.user)
 
 	return render(request, 'land.html', locals())
 

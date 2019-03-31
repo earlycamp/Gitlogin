@@ -1,56 +1,45 @@
 {% extends 'base.html' %}
-{%block content%}
+        {%block content%}
 
         {% if user.is_authenticated %}
 
+              <!-- Main Content is recorded here -->
 	<center>
 	<nav>
 		<img src="https://avatars0.githubusercontent.com/u/29069335?s=200&v=4">
 	</nav>
 	</center>
 
-<center>  
-          
-        {%if d in c %}
-
-              
-                                 
+        <center>  
+        {%if r %} 
                 <h4>Your Have access to early camp.</h4>
                 <h1>{{user}}</h1>
-
                 <a href="{%url 'logout'%}">
-
                         <button>logout</button>
-
                 </a>
 
                 {% else %}
-                <p> You are not authorizzed to see this page, please go to this link below</p>
+                <p> You are not authorized to see this page, please go to this link below</p>
 
 
 
                 <a href="{%url 'logout'%}">
-
                         <button>logout</button>
-
                 </a>
-         {% endif%}
-
-
-
-                   
-                    
-</center>
+         {% endif%}        
+        </center>
 
 
                  	 
 
-<center>
-         {% else %}
+         <!-- End -->
+        <center>
+                {% else %}
+                <!-- This is when the user session is not registered into the system -->
 
-         <p>  You are not authorized to see this page.</p>
-         {% endif %}
-</center>
+                 <p>  You are not authorized to see this page.</p>
+                {% endif %}
+        </center>
 
 {%endblock%}
 
