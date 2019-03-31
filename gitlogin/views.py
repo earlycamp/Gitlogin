@@ -10,7 +10,7 @@ def land(request):
 	z=[k['login'] for k in __import__('requests').get(config('api_url_base').strip()).json()]	
 	c = config('List')
 	d = str(request.user)
-	if d in c and z:
+	if d in c or z:
 		r = d
 		# print(r)
 	# print(request.user)
