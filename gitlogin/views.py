@@ -7,7 +7,7 @@ from django.contrib.auth.decorators import login_required
 def land(request):
 
  	# from github api
-	z=[k['login'] for k in __import__('requests').get(config('api_url_base')).json()]	
+	z=[k['login'] for k in __import__('requests').get(config('api_url_base').strip()).json()]	
 	c = config('List')
 	d = str(request.user)
 	if d in c and z:
