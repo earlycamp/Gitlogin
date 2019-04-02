@@ -7,13 +7,13 @@ from django.contrib.auth.decorators import login_required
 def land(request):
 
  	# from github api
-	z=[k['login'] for k in __import__('requests').get(config('api_url_base').strip()).json()]	
-	c = config('List')
-	d = str(request.user)
-	if d in c or z:
-		r = d
-		# print(r)
-	# print(request.user)
+	orgUser=[k['login'] for k in __import__('requests').get(config('api_url_base')).json()]	
+	conf = config('List')
+	logedUser = str(request.user)
+
+	if logedUser in conf or orgUser:
+		verifiedUser = logedUser
+
 
 	return render(request, 'land.html', locals())
 
