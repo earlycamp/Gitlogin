@@ -44,7 +44,7 @@ urlpatterns = [
 
     
     path('land/', views.land, name='land'),
-    path('lesson/', MarkDown.as_view(), name='home-page'),
+    path('lesson/', MarkDown.as_view(), name='lesson'),
     # path('lesson/', views.lesson, name='lesson'),
     path('', views.login, name='login'),
     # path('logout/', views.logout, name='logout'),
