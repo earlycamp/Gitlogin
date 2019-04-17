@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{%block content%}
+
+ <!-- markdown file -->
+{% load markdown_extras %}
+
+{{ markdowntext | markdown | safe }}
+
+
+{% endblock%}

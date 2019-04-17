@@ -16,7 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.contrib.auth import views as auth_views
-from gitlogin import views 
+from gitlogin import views
+from gitlogin.views import MarkDown
 from django.conf.urls import url, include
 
 
@@ -43,7 +44,8 @@ urlpatterns = [
 
     
     path('land/', views.land, name='land'),
-    path('sorry/', views.sorry, name='sorry'),
+    path('lesson/', MarkDown.as_view(), name='home-page'),
+    # path('lesson/', views.lesson, name='lesson'),
     path('', views.login, name='login'),
     # path('logout/', views.logout, name='logout'),
     path('accounts/', include('allauth.urls')),
