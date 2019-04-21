@@ -48,7 +48,7 @@ def logout(request):
 def login(request):
     return render(request, 'login.html')
  
-@login_required   
+
 def kickout(request):
     return render(request, 'kickout.html')
 
