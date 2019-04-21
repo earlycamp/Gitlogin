@@ -50,7 +50,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.github',
     'markdownify',
 
-  
+
 ]
 
 MIDDLEWARE = [
@@ -100,7 +100,7 @@ if config('MODE')=="dev":
            'HOST': config('DB_HOST'),
            'PORT': '',
        }
-       
+
    }
 else:
     DATABASES ={
@@ -128,7 +128,7 @@ AUTHENTICATION_BACKENDS = (
 
 SITE_ID = 1
 
-LOGIN_REDIRECT_URL = 'land'
+LOGIN_REDIRECT_URL = 'main'
 
 AUTH_PASSWORD_VALIDATORS = [
     {

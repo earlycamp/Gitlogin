@@ -3,13 +3,64 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3 | Moringa School</title>
+    <meta content='Junior, Moringa, Africa, Top IT School, School, Kenya, twitter , Android, FaceBook' name='keywords'>
+    <meta content='Moringa School is Africa’s top coding school, where we train students to become junior mobile and web developers in 12 intensive, exciting weeks.' name='description'>
+    <meta content='juniormoringaschool.com' name='author'>
+    <meta content='all' name='robots'>
 
     <title>gitlogin</title>
 
+
+
+    <link href="{% static 'assets/images/meta_icons/favicon.ico' rel='shortcut icon' type='image/x-icon' %}">
+    <link href="{% static 'assets/images/meta_icons/apple-touch-icon.png' rel='apple-touch-icon-precomposed' %}">
+    <!-- <link href='assets/images/meta_icons/apple-touch-icon.png' rel='apple-touch-icon-precomposed'> -->
+    <link href="{% static 'assets/images/meta_icons/apple-touch-icon-57x57.png' rel='apple-touch-icon-precomposed' sizes='57x57' %}">
+    <!-- <link href='assets/images/meta_icons/apple-touch-icon-57x57.png' rel='apple-touch-icon-precomposed' sizes='57x57'> -->
+    <link href="{% static 'assets/images/meta_icons/apple-touch-icon-72x72.png' rel='apple-touch-icon-precomposed' sizes='72x72' %}">
+    <!-- <link href='assets/images/meta_icons/apple-touch-icon-72x72.png' rel='apple-touch-icon-precomposed' sizes='72x72'> -->
+    <link href="{% static 'assets/images/meta_icons/apple-touch-icon-114x114.png' rel='apple-touch-icon-precomposed' sizes='114x114' %}">
+   <!--  <link href='assets/images/meta_icons/apple-touch-icon-114x114.png' rel='apple-touch-icon-precomposed' sizes='114x114'> -->
+   <link href="{% static 'assets/images/meta_icons/apple-touch-icon-144x144.png' rel='apple-touch-icon-precomposed' sizes='144x144' %}">
+   <!--  <link href='assets/images/meta_icons/apple-touch-icon-144x144.png' rel='apple-touch-icon-precomposed' sizes='144x144'> -->
+   <link href="{% static 'assets/images/meta_icons/apple-touch-icon-60x60.png' rel='apple-touch-icon-precomposed' sizes='57x57' %}">
+    <!-- <link href='assets/images/meta_icons/apple-touch-icon-60x60.png' rel='apple-touch-icon-precomposed' sizes='57x57'> -->
+    <link href="{% static 'assets/images/meta_icons/apple-touch-icon-120x120.png' rel='apple-touch-icon-precomposed' sizes='72x72' %}">
+    <!-- <link href='assets/images/meta_icons/apple-touch-icon-120x120.png' rel='apple-touch-icon-precomposed' sizes='72x72'> -->
+    <link href="{% static 'assets/images/meta_icons/apple-touch-icon-76x76.png' rel='apple-touch-icon-precomposed' sizes='114x114' %}">
+   <!--  <link href='assets/images/meta_icons/apple-touch-icon-76x76.png' rel='apple-touch-icon-precomposed' sizes='114x114'> -->
+    <link href="{% static 'assets/images/meta_icons/apple-touch-icon-152x152.png' rel='apple-touch-icon-precomposed' sizes='144x144' %}">
+    <!-- <link href='assets/images/meta_icons/apple-touch-icon-152x152.png' rel='apple-touch-icon-precomposed' sizes='144x144'> -->
+
+
+
      {% block styles %}
-  	 <link rel="stylesheet" href="{% static 'markdown.css' %}">
+  	 <link rel="stylesheet" type="text/css" href="{% static 'css/foundation.min.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/animate.min.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/app.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/reveal.min.css' %}">
+      <!-- <link rel="stylesheet" type="text/css" href="{% static 'markdown.css' %}"> -->
+
   	 {% endblock %}
+
+
+
+  	 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:300">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+     <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+     <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+
+    <script>
+    $(document).ready(function() {
+    $(document).foundation();
+});
+    </script>
 
   </head>
 

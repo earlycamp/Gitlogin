@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+
+        {%block content%}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="js/oauth-js/dist/oauth.js"></script>
+    <script>
+        'click '.button(
+        OAuth.initialize('HDdOYzwEsvFqqzg0LJYoVGFAE0E');
+        OAuth.popup('github')
+                .done(function(result) {
+                    result.get('/me')
+                            .done(function (response) {
+                                //this will display "John Doe" in the console
+                                console.log(response.name);
+                            })
+                            .fail(function (err) {
+                                //handle error with err
+                            });
+                })
+                .fail(function (err) {
+                    //handle error with err
+                }));
+    </script>
+</head>
+
+<body>
+  <!-- top page -->
+  <a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
+    <!--Header at the top starts here-->
+<div id="login" class="animated fadeIn">
+<div class="overlay">
+<div class="ovrly">
+
+     <div class="row ete">
+       <div class="large-12 medium-12 small-12 columns">
+         <p class="ms animated fadeInDown">Moringa School</p>
+         <p class="sm animated fadeInUp">Authorization Failed!</p>
+       </div>
+     </div>
+</div>
+</div>
+</div>
+    <div class="row login">
+        <div class="large-12 columns">
+            <p class="cent wel">Sorry, you are not authorized to use this application!</p>
+                <hr>
+                <p class="res">This might be because of two reasons:</p>
+               <p class="ress">- You don't have a Github account </p>
+               <p class="ress">- You are not part of The Moringa School Organization.</p>
+        </div>
+    </div>
+    
+<!-- footer -->
+<footer>
+  <div class="row">
+    <div class="large-12 columns">
+     <ul>
+   <span>Got questions?</span>
+        <li><a href="https://gitter.im/moringaschool/season6" target="blank">Ask on Gitter <i class="fa fa-external-link" aria-hidden="true"></i>
+</a></li>
+    </ul>
+     </div>
+  </div>
+   <hr>
+ <div class="row">
+   <div class="large-12 medium-12 columns">
+        <p class="copyrght cent">Copyright &copy; <script type="text/javascript">
+                            document.write(new Date().getFullYear());
+
+                        </script> Moringa School, Ngong Lane Plaza,
+        1st Floor, Ngong Road, All right reserved
+        </p>
+      </div>
+ </div>
+</div>
+</footer>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="assets/js/hello.min.js"></script>
+    <script>
+        hello.on('auth.login', function(auth) {
+
+            // Call user information, for the given network
+            hello(auth.network).api('/followers').then(function(r) {
+                // Inject it into the container
+                var label = document.getElementById('profile_' + auth.network);
+                if (!label) {
+                    label = document.createElement('div');
+                    label.id = 'profile_' + auth.network;
+                    document.getElementById('profile').appendChild(label);
+                }
+                label.innerHTML = '<img src="' + r.thumbnail + '" /> Hey ' + r.name;
+            });
+        });
+
+    </script>
+
+    <script>
+        hello.init({
+            github: '798a2f6a45aae46cb779'
+        }, {
+            redirect_uri: 'http://githubloginapi.bitballoon.com/tables.html'
+        });
+
+    </script>
+    <script>
+        $(document).foundation();
+
+    </script>
+{%endblock%}

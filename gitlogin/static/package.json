@@ -1,0 +1,19 @@
+{
+  "name": "Moringa-School-Curriculum-UI",
+  "version": "1.0.0",
+  "description": "Using the foundation framework for front-end developement",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moringaschool/Moringa-School-Curriculum-UI.git"
+  },
+  "author": "viscount",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moringaschool/Moringa-School-Curriculum-UI/issues"
+  },
+  "homepage": "https://github.com/moringaschool/Moringa-School-Curriculum-UI"
+}
