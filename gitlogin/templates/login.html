@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
         {%block content%}
 <!-- top page -->
@@ -9,11 +10,11 @@
 <div class="large-4 medium-4 small-2 columns zero">.</div>
 <div class="large-4 medium-4 small-8 columns lgn">
   <p class="cent animated fadeIn">
-    <img src="assets/logo-dark.png">
+    <img src="{% static "early.jpeg" %}">
   </p>
-               <p class="cent wel animated fadeIn">Welcome to Moringa School</p>        
+               <p class="cent wel animated fadeIn">Welcome to Early Camp</p>
                  <p class="cent animated fadeIn"><a class="git button" href="/accounts/github/login/?process=login">Login with github <i class="fa fa-github"></i></a></p>
-           
+
    <p class="cent lew animated fadeIn">to view your BootCamp Schedule</p>
    </div>
     <div class="large-4 medium-4 small-2 columns zero">.</div>

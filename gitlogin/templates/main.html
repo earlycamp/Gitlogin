@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
         {%block content%}
 
@@ -12,8 +13,8 @@
  <div id="nav">
  <ul class="logo">
  <li class="img">
- <a href="index.html" title="Moringa School">
-   <img src="assets/logo-dark.png">
+ <a href="main" title="Early Camp">
+   <img src="{% static "early.jpeg" %}">
    </a>
    </li>
     <li class="br"><a class="icn"><i class="fa fa-bars"></i></a></li>
@@ -42,7 +43,7 @@
          <li><a class="ppl re" href="week11">Week 11</a></li>
         </ul>
         </li>
-         <li><a class="ppl nne" href="http://projectperiod.azurewebsites.net/" target="project">Project</a></li>
+         <li><a class="ppl nne" href="#" target="project">Project</a></li>
          <li><a class="ppl nne drop">Resources<i class="fa fa-sort-desc"></i></a>
          <ul class="lss">
          <li><a class="ppl re" href="" target="front">Front-end</a></li>
@@ -55,7 +56,7 @@
 <!-- end of navbar -->
      <div class="row tet">
        <div class="large-12 medium-12 small-12 columns">
-         <p class="ms animated fadeInDown">Moringa School Curriculum</p>
+         <p class="ms animated fadeInDown">Early Camp Curriculum</p>
          <p class="sm animated fadeInUp">Front-end schedule</p>
        </div>
      </div>
